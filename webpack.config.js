@@ -1,6 +1,6 @@
 const path = require('path');
-const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: ['./src/index.js', './src/styles/main.scss'],
@@ -11,13 +11,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
-      },
-      {
         test: /\.html$/,
         use: [
           {
@@ -27,15 +20,11 @@ module.exports = {
         ]
       },
       { test: /\.jpg$/, loader: 'file-loader' },
-      { // regular css files
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract({
-          loader: 'css-loader?importLoaders=1',
-        }),
-      },
-      { // sass / scss loader for webpack
-        test: /\.(sass|scss)$/,
-        loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
+      { // css / sass / scss loader for webpack
+        test: /\.(css|sass|scss)$/,
+        use: ExtractTextPlugin.extract({
+          use: ['css-loader', 'sass-loader'],
+        })
       }
     ]
   },
@@ -47,6 +36,6 @@ module.exports = {
     new ExtractTextPlugin({ // define where to save the file
       filename: 'dist/[name].bundle.css',
       allChunks: true,
-    })
-  ]
+    }),
+  ],
 };
