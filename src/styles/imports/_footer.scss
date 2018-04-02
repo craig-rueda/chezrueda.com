@@ -1,7 +1,7 @@
 $footer-height: 20px;
 
 #footer {
-  color: $color_muted_white; text-align: center; font-size: 11px; position: fixed; bottom: 0; width: 100%; opacity: .8; z-index: 100000; height: $footer-height; line-height: $footer-height + 1; background-color: rgba(#000, .5);
+  color: $color_muted_white; text-align: center; font-size: 11px; position: fixed; bottom: 0; width: 100%; opacity: .8; z-index: 100000; height: $footer-height; line-height: $footer-height + 1; background-color: rgba(#000, .6);
 
   #toTop {
     font-size: 16px; background-color: #333; border-radius: 4px 4px 0 0; bottom: 0; display: none; height: 35px; position: absolute; right: 75px; text-align: center; width: 48px; transition: all .2s ease-in-out 0s;
