@@ -41,7 +41,7 @@ h1, h2 { text-shadow: 1px 1px 2px rgba(0,0,0,.20); }
 
 .about .left { width: 40%; }
 .about .img { height: 500px; width: 500px; border: 5px solid rgba(255, 255, 255, 0.95);
-  border-radius: 1000px; background-size: cover; background-image: url('../images/fam.jpg'); opacity: .75;
+  border-radius: 1000px; background-size: cover; background-image: url('/images/fam.jpg'); opacity: .75;
   position: absolute; left: 50%; top: 50%; transform: translateY(-50%) translateX(-50%);
 }
 
