@@ -1,0 +1,18 @@
+@import "imports/_colors.scss";
+
+#about-section { color: $color_muted_white; background: linear-gradient(to bottom, rgb(165, 62, 155) 0%, $color_primary 100%); }
+
+.about .wrap { height: 100%; }
+.about .left { float: left; }
+.about .left, .about .right { position: relative; height: 100%; display: inline-block; }
+.about h1 { text-align: center; position: absolute; width: 100%; font-size: 50px; margin: 80px 0; color: rgba(255,255,255,0.85); }
+
+.about .left { width: 40%; }
+.about .img { height: 500px; width: 500px; border: 5px solid $color_muted_white;
+  border-radius: 1000px; background-size: cover; background-image: url('/images/fam.jpg'); opacity: .75;
+  position: absolute; left: 50%; top: 50%; transform: translateY(-50%) translateX(-50%);
+}
+
+.about .right { width: 60%; }
+.about .right .slide { position: relative; }
+.about .right .slide-text { left: 50%; top: 50%; transform: translateY(-50%) translateX(-50%); position: absolute; font-size: 26px; line-height: 35px;}
