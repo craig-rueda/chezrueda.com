@@ -2,10 +2,10 @@
 
 #main-section { color: $color_muted_white; background: linear-gradient(to bottom, rgb(165, 62, 155) 0%, $color_primary 100%); }
 
-.nav { text-align: center; padding-top: 20px; font-size: 20px; opacity: .5; position: absolute; left: 50%; top: 0; transform: translateX(-50%); z-index: 2;}
-.nav:hover { opacity: .85; }
+.nav { text-align: center; padding-top: 20px; font-size: 20px; position: absolute; left: 50%; top: 0; transform: translateX(-50%); z-index: 2;}
 .nav span { height: 40px; width: 1px; background-color: #FFF}
-.nav a { color: #FFF; border-right: 1px solid #FFF; padding: 0 20px; display: inline-block; vertical-align: middle; height: 55px; line-height: 55px;}
+.nav a { color: rgba(#FFF, .5); border-right: 1px solid rgba(#FFF, .5); padding: 0 20px; display: inline-block; vertical-align: middle; height: 55px; line-height: 55px;}
+.nav a:hover { color: rgba(#FFF, .85); }
 .nav a:last-child { border: 0; }
 
 .header-section { margin: auto; width: 420px; text-align: center; position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); }
