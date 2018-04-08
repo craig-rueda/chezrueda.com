@@ -1,0 +1,11 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin pinksection {
+  color: $color_muted_white; background: linear-gradient(to bottom, rgb(165, 62, 155) 0%, $color_primary 100%);
+}

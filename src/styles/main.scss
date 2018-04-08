@@ -1,14 +1,20 @@
-@import "~fullpage.js/dist/jquery.fullpage.css";
+//@import "~fullpage.js/dist/jquery.fullpage.css";
 
 @import "imports/_about-section.scss";
 @import "imports/_colors.scss";
 @import "imports/_contact-section.scss";
 @import "imports/_main-section.scss";
+@import "imports/_mixins.scss";
 @import "imports/_programs-section.scss";
 @import "imports/_footer.scss";
 @import "imports/_why-section.scss";
 
 * { box-sizing: border-box; }
-body { font-family: 'Roboto', sans-serif; font-weight: 300; }
+html, body { font-family: 'Roboto', sans-serif; font-weight: 300; height: 100%; margin: 0; }
 a { text-decoration: none; }
-h1, h2 { text-shadow: 1px 1px 2px rgba(0,0,0,.20); }
+h1, h2, h3, h4, h5 { text-shadow: 1px 1px 2px rgba(0,0,0,.20); }
+h1 { font-size: 50px; text-align: center; }
+
+.section { padding: 60px; }
+.section-wrap { width: 1000px; margin: auto; @include clearfix; }
+.shadow { text-shadow: 1px 1px 2px rgba(0,0,0,.20); }

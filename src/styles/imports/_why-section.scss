@@ -1,12 +1,15 @@
 @import "_colors.scss";
 
-.why { color: rgba($color_primary, 0.95); position: relative; }
-.why > .nav a { color: rgba($color_primary, 0.95);}
-.why > .wrap { position: absolute; top: 50%; transform: translateY(-50%);}
+.why-section {
+  color: rgba($color_primary, 0.95); position: relative;
 
-.why h1 { text-align: center; margin: 0 0 90px 0; font-size: 50px;}
-.why h2 { margin: 0 0 20px 0; }
-.why .column-wrap { display: inline-block; padding: 0 100px; line-height: 30px; }
-.why .column-wrap > div { width: 25%; display: inline-block; float: left; box-sizing: border-box; padding: 40px;}
-.why .column-wrap > div:nth-child(odd) { background-color: rgba($color_primary, 0.95); color: $color_muted_white; border-radius: 10px; }
-.why .column-wrap > div:last-child { float: none;}
+  h1 { margin: 0 0 90px 0;}
+  h2 { margin: 0 0 20px 0; }
+
+  .box {
+    width: 25%; display: inline-block; float: left; box-sizing: border-box; padding: 30px;
+
+    &:nth-child(odd) { background-color: rgba($color_primary, 0.95); color: $color_muted_white; border-radius: 5px; }
+    &:last-child { float: none;}
+  }
+}

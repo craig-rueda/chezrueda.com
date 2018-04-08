@@ -1,6 +1,6 @@
 @import "_colors.scss";
 
-#main-section { color: $color_muted_white; background: linear-gradient(to bottom, rgb(165, 62, 155) 0%, $color_primary 100%); }
+.main-section { @include pinksection; height: 100%; }
 
 .nav { text-align: center; padding-top: 20px; font-size: 20px; position: absolute; left: 50%; top: 0; transform: translateX(-50%); z-index: 2;}
 .nav span { height: 40px; width: 1px; background-color: #FFF}

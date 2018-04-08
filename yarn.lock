@@ -1759,12 +1759,6 @@ fstream@^1.0.0, fstream@^1.0.10, fstream@^1.0.2:
     mkdirp ">=0.5 0"
     rimraf "2"
 
-fullpage.js@~2.9.6:
-  version "2.9.6"
-  resolved "https://registry.yarnpkg.com/fullpage.js/-/fullpage.js-2.9.6.tgz#8ab8ea65fd99c3abd58f0d7be290b83fb1c0999d"
-  dependencies:
-    jquery ">=1.6.0"
-
 function-bind@^1.0.2, function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
@@ -2519,7 +2513,7 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
-jquery@>=1.6.0:
+jquery@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
 
@@ -2633,6 +2627,10 @@ lcid@^1.0.0:
   resolved "https://registry.yarnpkg.com/lcid/-/lcid-1.0.0.tgz#308accafa0bc483a3867b4b6f2b9506251d1b835"
   dependencies:
     invert-kv "^1.0.0"
+
+load-google-maps-api@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/load-google-maps-api/-/load-google-maps-api-1.0.0.tgz#f2aae9de265e8959d87ac4e780f007b8ef8cd571"
 
 load-json-file@^1.0.0:
   version "1.1.0"
